@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crypto Price Tracker</title>
+  <link rel="stylesheet" href="cryptoprice.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Crypto Price Tracker</h1>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search coin..." />
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Coin</th>
+          <th>Symbol</th>
+          <th>Price ($)</th>
+          <th>Change 24h</th>
+        </tr>
+      </thead>
+      <tbody id="cryptoTable">
+        <!-- JS will fill data -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="cryptoprice.js"></script>
+</body>
+</html>
