@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Price Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Crypto Price Tracker</h1>
+            <p class="last-update">Last updated: <span id="lastUpdate">--</span></p>
+        </header>
+
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="searchInput" placeholder="Search cryptocurrency...">
+        </div>
+
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Loading crypto data...</p>
+        </div>
+
+        <div id="error" class="error hidden">
+            <p>⚠️ Failed to fetch data. <button id="retryBtn">Retry</button></p>
+        </div>
+
+        <div id="cryptoGrid" class="crypto-grid"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
